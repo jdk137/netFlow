@@ -36,7 +36,7 @@ visualize website netFlow based on d3 sankey.js, like google analytics
 
 重要数据结构：
 
-1. data
+1.data
 
     var data = {
         nodeIndex: {}, // key is level + '_' + name
@@ -46,7 +46,7 @@ visualize website netFlow based on d3 sankey.js, like google analytics
         rects: [] //jqnodes array
     };
 
-2. node
+2.node
 
     {
         color: "white",         //node color
@@ -65,7 +65,7 @@ visualize website netFlow based on d3 sankey.js, like google analytics
         rect: p.fn.p.init[1]    //node's jqNode
     }
 
-3. link
+3.link
 
     {
         dy: 227.5,              //link path height
