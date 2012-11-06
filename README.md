@@ -10,11 +10,13 @@ visualize website netFlow based on d3 sankey.js, like google analytics
 服务器中打开t_mySankey.htm  查看demo。_
 
 重要改动：
+
 1. 输入数据加了level项，解决了默认没有target的结点level级数为最后一级的问题。
 2. 相应地修改了sankey.js处理level的代码。
 3. 增加每个节点的input 和 output 统计。
 
 配置项说明：
+
     var nodeWidth = 100; //节点宽度
     var linkHLWidth = 10; //linkHorizonalLineWidth
     var nodePadding = 1.5 * linkHLWidth; //节点上下间距
@@ -23,6 +25,7 @@ visualize website netFlow based on d3 sankey.js, like google analytics
         height = 500 - margin.top - margin.bottom; //高
 
 重要函数接口：
+
 1. createHead() 中涉及头部各层汇总信息内容和样式的修改。
 2. createJqNodes() 涉及结点内容和样式的修改。
 3. createFloatTag() 涉及浮框样式的修改。
@@ -32,7 +35,9 @@ visualize website netFlow based on d3 sankey.js, like google analytics
 7. $("#chart").on("click", function () {}) 显示部分数据时鼠标点解响应。
 
 重要数据结构：
+
 1. data
+
     var data = {
         nodeIndex: {}, // key is level + '_' + name
         linkIndex: {}, // key is sourceIndexInArray + '_' + targetIndexInArray
@@ -42,6 +47,7 @@ visualize website netFlow based on d3 sankey.js, like google analytics
     };
 
 2. node
+
     {
         color: "white",         //node color
         x: 0,                   //node left
@@ -60,6 +66,7 @@ visualize website netFlow based on d3 sankey.js, like google analytics
     }
 
 3. link
+
     {
         dy: 227.5,              //link path height
         sy: 0,                  //link path source end y
