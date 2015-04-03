@@ -36,7 +36,7 @@ visualize website netFlow based on d3 sankey.js, like google analytics
 6. $("#chart").delegate("div.rect", "mouseout", function () {}) 鼠标移出节点的事件响应，默认响应为隐藏浮框。
 7. $("#chart").on("click", function () {}) 显示部分数据时鼠标点解响应。
 
-Important data structor：
+Important data structure：
 ----
 
 1.data
