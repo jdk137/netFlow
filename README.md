@@ -7,7 +7,8 @@ visualize website netFlow based on d3 sankey.js, like google analytics
 
 2012-11-06
 ------
-服务器中打开t_mySankey.htm  查看demo。_
+服务器中打开t_mySankey.htm  查看demo。
+![mySankey]()
 
 重要改动：
 
@@ -75,4 +76,5 @@ visualize website netFlow based on d3 sankey.js, like google analytics
         target: Object,         //target node
         value: 3                //link value
     }
+
 
