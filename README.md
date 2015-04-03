@@ -8,7 +8,7 @@ visualize website netFlow based on d3 sankey.js, like google analytics
 2012-11-06
 ------
 服务器中打开t_mySankey.htm  查看demo。
-![mySankey]()
+![mySankey](https://github.com/jdk137/netFlow/blob/master/mySankey.png)
 
 重要改动：
 
