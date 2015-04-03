@@ -16,7 +16,7 @@ visualize website netFlow based on d3 sankey.js, like google analytics
 2. 相应地修改了sankey.js处理level的代码。
 3. 增加每个节点的input 和 output 统计。
 
-配置项说明：
+配置项说明(configs)：
 
     var nodeWidth = 100; //节点宽度
     var linkHLWidth = 10; //linkHorizonalLineWidth
@@ -25,7 +25,8 @@ visualize website netFlow based on d3 sankey.js, like google analytics
         width = 960 - margin.left - margin.right, //宽
         height = 500 - margin.top - margin.bottom; //高
 
-重要函数接口：
+重要函数接口(API)：
+----
 
 1. createHead() 中涉及头部各层汇总信息内容和样式的修改。
 2. createJqNodes() 涉及结点内容和样式的修改。
@@ -35,7 +36,8 @@ visualize website netFlow based on d3 sankey.js, like google analytics
 6. $("#chart").delegate("div.rect", "mouseout", function () {}) 鼠标移出节点的事件响应，默认响应为隐藏浮框。
 7. $("#chart").on("click", function () {}) 显示部分数据时鼠标点解响应。
 
-重要数据结构：
+Important data structor：
+----
 
 1.data
 
